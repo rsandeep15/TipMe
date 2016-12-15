@@ -14,6 +14,7 @@
 		2C900B6F1DFE1410005EE771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C900B6D1DFE1410005EE771 /* LaunchScreen.storyboard */; };
 		2C900B7A1DFE1410005EE771 /* TipMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C900B791DFE1410005EE771 /* TipMeTests.swift */; };
 		2C900B851DFE1410005EE771 /* TipMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C900B841DFE1410005EE771 /* TipMeUITests.swift */; };
+		2CB2A16C1E026503003997DA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2A16B1E026503003997DA /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2C900B801DFE1410005EE771 /* TipMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C900B841DFE1410005EE771 /* TipMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipMeUITests.swift; sourceTree = "<group>"; };
 		2C900B861DFE1410005EE771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CB2A16B1E026503003997DA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				2C900B641DFE1410005EE771 /* AppDelegate.swift */,
 				2C900B661DFE1410005EE771 /* ViewController.swift */,
 				2C900B681DFE1410005EE771 /* Main.storyboard */,
+				2CB2A16B1E026503003997DA /* SettingsViewController.swift */,
 				2C900B6B1DFE1410005EE771 /* Assets.xcassets */,
 				2C900B6D1DFE1410005EE771 /* LaunchScreen.storyboard */,
 				2C900B701DFE1410005EE771 /* Info.plist */,
@@ -188,7 +191,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Sandeep Raghunandhan";
 				TargetAttributes = {
 					2C900B601DFE1410005EE771 = {
@@ -261,6 +264,7 @@
 			files = (
 				2C900B671DFE1410005EE771 /* ViewController.swift in Sources */,
 				2C900B651DFE1410005EE771 /* AppDelegate.swift in Sources */,
+				2CB2A16C1E026503003997DA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +337,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -382,6 +387,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -503,6 +509,7 @@
 				2C900B8B1DFE1410005EE771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C900B8C1DFE1410005EE771 /* Build configuration list for PBXNativeTarget "TipMeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +518,7 @@
 				2C900B8E1DFE1410005EE771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C900B8F1DFE1410005EE771 /* Build configuration list for PBXNativeTarget "TipMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +527,7 @@
 				2C900B911DFE1410005EE771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
