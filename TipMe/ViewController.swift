@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated);
         let defaults = UserDefaults.standard
         let defaultIndex = defaults.integer(forKey: "index")
-        segValue.selectedSegmentIndex = defaultIndex        
+        segValue.selectedSegmentIndex = defaultIndex
+        recalcTip()
         
     }
 
@@ -30,9 +31,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func calcTip(_ sender: Any) {
-        let tipPercentages = [0.18, 0.2, 0.25]
+    func recalcTip(){
+        let tipPercentages = [0.15, 0.2, 0.25]
         let index = segValue.selectedSegmentIndex;
         let bill = Double(billField.text!) ?? 0
         let tip = bill * tipPercentages[index];
@@ -40,8 +40,12 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
     }
+
+    @IBAction func calcTip(_ sender: Any) {
+        recalcTip()
+    }
     @IBAction func tipValueChange(_ sender: Any) {
-        calcTip(Any.self)
+        recalcTip()
     }
     @IBAction func onTapOut(_ sender: Any) {
         view.endEditing(true)
